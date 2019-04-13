@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
+import Login from './Login'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>App</h1>
-        </header>
-      </div>
+      <div className="login-form">
+        <style>
+          {`
+      body > div,
+      body > div > div,
+      body > div > div > div.login-form {
+        height: 100%;
+      }
+    `}
+        </style>
+        <Login />
+    </div>
     );
   }
 }
