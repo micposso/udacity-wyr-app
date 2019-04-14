@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 import {
   Button,
   Form,
@@ -7,7 +7,7 @@ import {
   Image,
   Message,
   Segment
-} from "semantic-ui-react";
+} from "semantic-ui-react"
 
 class Login extends Component {
   render() {

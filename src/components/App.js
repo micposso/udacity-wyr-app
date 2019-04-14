@@ -1,8 +1,14 @@
-import React, { Component } from 'react';
-import '../styles/App.css';
+import React, { Component } from 'react'
+import '../styles/App.css'
+import { connect } from 'react-redux'
 import Login from './Login'
+import { handleInitialData } from '../actions/shared'
+
 
 class App extends Component {
+  componentDidMount() {
+    this.props.dispatch(handleInitialData())
+  }
   render() {
     return (
       <div className="login-form">
@@ -21,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect()(App);
